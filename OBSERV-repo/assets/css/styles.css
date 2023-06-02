@@ -7,13 +7,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     height: 100vh;
-    max-width: 700px;
+    max-width: 550px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .mobileBody {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: #202020;
 }
@@ -29,10 +29,10 @@ header {
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    max-width: 700px;
+    max-width: 550px;
     height: 7vh;
     background-color: #5A007A;
     display: flex;
@@ -72,11 +72,17 @@ ul {
     height: 75%;
 }
 
+.class {
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
 .heroSection {
     display: flex;
     margin-top: 2rem;
-    width: 60%;
-    
+    width: 84.5%;
+    border-radius: 0.5rem;
     align-items: center;
     flex-direction: column;
     background-color: #202020;
@@ -84,6 +90,88 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
+}
+
+.heroForm {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.heroForm .cityPost input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.heroForm .cityPost .postCode {
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: #0B0B0B;
+}
+
+.heroForm input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 95.5%;
+    background-color: #202020;
+    color: #EDEDED;
+}
+
+input[type="date"] {
+    position:relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+}
+
+input[type="date"]:after {
+    content: "⬇";
+    display: block;
+}
+
+.submitContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.submitButton {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 84.5%;
+    background-color: #5A007A;
+    color: #EDEDED;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.submitButton:hover {
+    background-color: #410058
+}
+
+.heroForm ::placeholder {
+    color: #EDEDED;
 }
 
 .cityPost {
@@ -98,40 +186,44 @@ ul {
     width: 30%;
 }
 
-.heroForm {
+.hero {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
-.homeCardsTop {
+.homeCards {
     margin: 20px auto;
-  height:200px;
-  display:grid;
-  grid-template-columns: 200px 200px;
-  grid-row: auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.homeCardsBottom {
-    margin: 20px auto;
-    height:200px;
+    height:14rem;
+    max-height: 14rem;
     display:grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 13rem 13rem;
     grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    justify-content: center;
 }
+
 
 .card {
     background-color:#0B0B0B;
-    padding:20px;
     border-radius:10px;
     color:#fff;
-    display:flex;
-    align-items:center;
     justify-content:center;
-    font-size:40px;
+    font-size:20px;
     font-family:sans-serif;
+    
+}
+
+.cardImage {
+    width: 100%;
+    border-radius:10px;
+}
+
+.cardText {
+    padding: 1rem;
+}
+
+#product {
+    display: none;
 }
