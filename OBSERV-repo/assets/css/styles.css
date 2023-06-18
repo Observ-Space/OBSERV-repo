@@ -245,3 +245,129 @@ input[type="date"]:after {
 #productPara {
     padding: 1rem 2rem;
 }
+
+#bookingInfo {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.bookButton {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #5A007A;
+    color: #EDEDED;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.bookButton:hover {
+    background-color: #410058
+}
+
+.bookingForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.bookingForm label {
+    justify-self: flex-Start;
+    align-self: flex-start;
+    font-size: small;
+    margin-left: 2rem;
+    color: #cccccc;
+}
+
+.bookingForm input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 85%;
+    background-color: #0B0B0B;
+    color: #EDEDED;
+}
+
+.summaryContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.summary {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem;
+    background: #0B0B0B;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.paymentButton {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #5A007A;
+    color: #EDEDED;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.paymentButton:hover {
+    background-color: #410058
+}
+
+#paymentInfo {
+    display: none;
+}
+
+#bookings {
+    display: none;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: underline;
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    background: #D9D9D9;
+    color: #2C2C2C;
+    border-radius: .3rem;
+    /* box shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bookingConfirmed {
+    display: none;
+}

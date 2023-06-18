@@ -74,6 +74,7 @@
                 This beautiful spot located just outside of the Granite City, also known as Aberdeen. This location has all you need, a beautiful
                 view of the surrounding forest, mountains and river.
             </p>
+            <button class="bookButton block" type="submit">Make a Booking</button>
             <h1 class="productHead productText">Places You Might Also Like</h1>
             <div class="homeCards">
                 <div class="card">
@@ -90,20 +91,87 @@
 
       </section>
 
+      <section id="bookingInfo">
+        <img src="assets/img/Group 12.png" alt="picture of product" id="productImage">
+        <h1 class="productHead productText">Aberdeenshire, Scotland</h1>
+        <form class="bookingForm">
+          <label>Number of Guests</label>
+          <input type="number" placeholder="1" required>
+          <label>Full Name</label>
+          <input typ="text" placeholder="John Doe" required>
+          <label>Start Date</label>
+          <input type="date" placeholder="Start Date" required>
+          <label>End Date</label>
+          <input type="date" placeholder="End Date" required>
+        </form>
+        <button class="paymentButton block" type="submit">Continue to Billing</button>
+        <div class="summaryContainer">
+          <div class="summary">
+            <h3 class="productText">Aberdeen</h3>
+            <h3 class="productText">892 Miles Away</h3>
+            <h3 class="productText">£120 Per Person</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="paymentInfo">
+        <img src="assets/img/Group 12.png" alt="picture of product" id="productImage">
+        <h1 class="productHead productText">Aberdeenshire, Scotland</h1>
+        <form class="bookingForm">
+          <label>Email Address</label>
+          <input type="email" placeholder="johndoe@observ.app" required>
+          <label>Full Name</label>
+          <input typ="text" placeholder="John Doe" required>
+          <label>Card Number</label>
+          <input type="text" placeholder="1234 5678 9123 4567" required>
+          <label>CVV</label>
+          <input type="text" placeholder="123" required>
+          <label>Expiry Date</label>
+          <input type="text" placeholder="mm/yy" required>
+        </form>
+        <button id="payButton" class="paymentButton block" type="submit">Confirm Booking</button>
+      </section>
+
+      <section id="bookingConfirmed">
+        <div class="titleContainer">
+          <h1 class="bookingTitle">Reservation Confirmed!</h1>
+        </div>
+        <div class="booking">
+          <h4>Aberdeenshire, Scotland: 23/05/2025</h4>
+        </div>
+        <div class="booking">
+          <h4>Price Paid: £120</h4>
+        </div>
+      </section>
+
+      <section id="bookings">
+        <div class="titleContainer">
+          <h1 class="bookingTitle">Bookings</h1>
+        </div>
+        <div class="booking">
+          <h4>Aberdeenshire, Scotland: 23/05/2025</h4>
+        </div>
+        <div class="booking">
+          <h4>Yorskshire, England: 13/06/2024</h4>
+        </div>
+        <div class="booking">
+          <h4>Liverpool, England: 05/08/2023</h4>
+        </div>
+      </section>
       
       <nav>
         <ul>
           <li class="firstItem">
-            <img src="assets/img/cart.svg">
+            <img class="navButton" src="assets/img/cart.svg">
           </li>
           <li>
-            <img src="assets/img/home.svg" id="homeNav"> 
+            <img class="navButton" src="assets/img/home.svg" id="homeNav"> 
           </li>
           <li>
-            <img src="assets/img/search.svg">
+            <img class="navButton" src="assets/img/search.svg">
           </li>
           <li>
-            <img src="assets/img/book.svg">
+            <img class="navButton" src="assets/img/book.svg" id="bookingsButton">
           </li>
         </ul>
       </nav>
